@@ -62,6 +62,8 @@ document.addEventListener("DOMContentLoaded", function() {
   var loginMessage = document.getElementById('login-message');
   // Get the login button element
   var loginButton = document.getElementById('login-button');
+  // Get the login prompt element
+  var loginPrompt = document.getElementById('login-prompt');
 
   // Show or hide the login message based on the login status
   function updateLoginStatus() {
@@ -78,19 +80,41 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  // Simulate login action (example)
-  function login() {
-    const username = prompt('Please enter your username:');
-    const password = prompt('Please enter your password:');
+  // Handle login form submission
+  function handleLoginFormSubmit(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
     if (username && password) {
       isLoggedIn = true;
+      hideLoginForm();
       updateLoginStatus();
+    } else {
+      Swal.fire('Error', 'Please enter username and password', 'error');
     }
   }
 
   // Add event listener to the login button
-  loginButton.addEventListener('click', login);
+  loginButton.addEventListener('click', function() {
+    showLoginForm();
+  });
+
+  // Add event listener to the login form
+  var loginFormElement = document.querySelector('#login-prompt form');
+  loginFormElement.addEventListener('submit', handleLoginFormSubmit);
+
+  // Show login form
+  function showLoginForm() {
+    loginPrompt.style.display = 'block';
+  }
+
+  // Hide login form
+  function hideLoginForm() {
+    loginPrompt.style.display = 'none';
+    loginFormElement.reset();
+  }
 
   // Check if user is logged in (example)
   var isLoggedIn = false;
