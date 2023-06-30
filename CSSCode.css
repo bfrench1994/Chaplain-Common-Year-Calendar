@@ -1,12 +1,13 @@
+/* CSSCode.css */
 body {
   font-family: Arial, sans-serif;
   color: #f4ebeb;
-font-size: large;
-font-family: 'Times New Roman', Times, serif;
-font-weight: bold;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
   text-align: center;
   padding: 20px;
-  background-image: url("v1080-156e-x.jpg");
+  background-image: url("tarot_symbol.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -16,72 +17,43 @@ font-weight: bold;
 }
 
 h1 {
-  color: rgb(252, 251, 251); /* Set the title color to black */
+  color: rgb(252, 251, 251);
+  /* Set the title color to black */
 }
 
 .card {
-  background-color: #f6f6f5; /* Set the card background color to cream */
-}
-
-.card-text {
-  color: rgb(163, 15, 15); /* Set the card text color to teal */
-}
-  
-  h1 {
-    margin-top: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 36px;
-    color: #f8f5f5;
-  }
-  
-  .container {
-    margin-top: 80px;
-  }
-  
-  .input-container {
-    margin-bottom: 20px;
-  }
-  
-  .label {
-    margin-right: 5px;
-    color: #26185f;
-  }
-  
-  .card {
-    display: inline-block;
-    background-image: url("istockphoto-1286121434-170667a.jpg");
-    background-repeat: no-repeat;
+  width: 250px;
+  height: 450px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f6eff6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #eeeef7;
+  background-image: url("istockphoto-1286121434-170667a.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
-    width: 250px;
-    height: 450px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #f6eff6;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    color: #eeeef7;
-  }
+}
 
-  .card-content {
-    font-size: 50px;
-    color: #e7e7f0;
-  }
-  .card-month {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #f7f7f9;
-  }
-  
-  .card-date {
-    font-size: 28px;
-    margin-bottom: 10px;
-    color: #e2e2e8;
-  }
+.card-content {
+  font-size: 44px;
+  color: #e7e7f0;
+}
+
+.card-month {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #f7f7f9;
+}
+
+.card-date {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #e2e2e8;
+}
+
   
   
   
@@ -119,8 +91,36 @@ h1 {
     padding: 10px 20px;
     font-size: 16px;
   }
-  
-  
-  
-  
-  
+  /* Additional CSS Code */
+  .login-prompt {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #090609;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  .login-prompt label,
+  .login-prompt input {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .login-prompt input[type="text"],
+  .login-prompt input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #26185f;
+    border-radius: 5px;
+  }
+
+  .login-prompt button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
