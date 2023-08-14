@@ -323,7 +323,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Check if user is logged in (example)
-  var isLoggedIn = false;
+  var isLoggedIn = true;
 
   // Call the function to update the login status initially
   updateLoginStatus();
