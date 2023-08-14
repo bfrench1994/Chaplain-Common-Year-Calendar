@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
       day: "14",
       card: "Queen of Clubs",
       description: "Sextilis 8",
+      week: "",
     },
     {
       month: "August",
