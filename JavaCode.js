@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
       day: "13",
       card: "King of Clubs",
       description: "Sextilis 7",
-      week: "7 of Clubs Week Start, Week 33",
+      week: "7 of Clubs Week Start Week 33",
     },
     {
       month: "August",
@@ -141,8 +141,8 @@ document.addEventListener("DOMContentLoaded", function() {
       month: "August",
       day: "20",
       card: "6 of Clubs",
-      description: "Sextilis 14, 6 of Clubs Week Start Week 34",
-      week: "6 of Clubs Week Start, Week 34",
+      description: "Sextilis 14",
+      week: "6 of Clubs Week Start Week 34",
     },
     {
       month: "August",
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function() {
       day: "27",
       card: "Queen of Hearts",
       description: "Sextilis 21",
-      week: "5 of Clubs Week Start, Week 35",
+      week: "5 of Clubs Week Start Week 35",
     },
     {
       month: "August",
