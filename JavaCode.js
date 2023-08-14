@@ -38,7 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
       month: "August",
       day: "6",
       card: "7 of Diamonds",
-      description: "Quintiles 28, 8 of Clubs Week Start Week 32",
+      description: "Quintiles 28",
+      week: "8 of Clubs Week Start Week 32",
     },
     {
       month: "August",
