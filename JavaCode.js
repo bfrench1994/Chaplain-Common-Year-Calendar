@@ -212,6 +212,7 @@ document.addEventListener("DOMContentLoaded", function() {
         card.innerHTML = `
           <p class="card-content">${data.description}</p>
           <p class="card-content">${data.card}</p>
+          <p class="card-content">${data.week}</p>
         `;
 
         cardContainer.appendChild(card);
